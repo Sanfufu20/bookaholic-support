@@ -126,11 +126,13 @@
   <h2>Short version</h2>
   <p><strong>Bookaholic does not collect or sell any personal data.</strong>
   There are no accounts, no analytics, no advertising, and no third-party tracking
-  SDKs. Everything you create in the app stays on your device. The only times any
-  information leaves your device are the two optional features described below:
-  the single word you choose to look up when the optional online-lookup feature is
-  enabled, and the text you choose to translate with Apple's Translation feature.
-  Web searches open in your own browser (Safari), outside the app.</p>
+  SDKs. Everything you create in the app stays on your device. Bookaholic works
+  fully offline — no word or reading data is ever sent to any dictionary service
+  or web search. The only network activity is optional and user-initiated:
+  downloading an Apple Translation language pack the first time you translate
+  into a new language (managed by iOS; translation itself happens on your
+  device), and downloading an optional offline dictionary file from the app's
+  own release assets.</p>
 
   <h2>Data stored on your device only</h2>
   <p>The following are stored <strong>locally on your device</strong> and are never
@@ -163,39 +165,9 @@
   <h2>Optional network features</h2>
   <p>Bookaholic works fully offline by default. Its built-in dictionaries (JMdict,
   Japanese WordNet, KANJIDIC2, CC-CEDICT and other open data) are bundled in the
-  app. The features below are optional and only send data off your device as
-  described.</p>
-
-  <h3>Look up online</h3>
-  <p>This feature is <strong>turned OFF by default</strong>. If — and only if — you
-  turn it on (Settings → Languages &amp; Translation) and then tap "Look up online"
-  on a word the offline dictionaries don't have, the app sends <strong>just that
-  word</strong> (at most 64 characters, nothing else from the page you are reading)
-  to a third-party dictionary service to fetch a definition:</p>
-  <ul>
-    <li><strong>Japanese:</strong> Jisho (<code>jisho.org</code>,
-      <a href="https://jisho.org/about">about page</a>)</li>
-    <li><strong>English:</strong> the Free Dictionary API
-      (<code>dictionaryapi.dev</code>) or Wiktionary (<code>wiktionary.org</code>,
-      <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">privacy
-      policy</a>)</li>
-  </ul>
-  <p>Like every request made over the internet, these requests necessarily carry
-  standard connection information — your network (IP) address and a technical
-  user-agent string. <strong>Bookaholic adds no identifiers of its own</strong>:
-  no account, no device identifier, no reading history, and no analytics ride
-  along with the word. We receive and retain nothing; the request goes directly
-  from your device to the service. These services are operated by third parties
-  that may keep standard server logs under their own privacy policies, which we
-  encourage you to review. You can withdraw consent at any time by turning the
-  feature back off — the app then makes no dictionary network requests at all.</p>
-
-  <h3>Web search</h3>
-  <p>If the online dictionaries have no answer, the app can offer a plain web
-  search for the word. Tapping it <strong>leaves the app and opens your own
-  browser</strong> (Safari) at jisho.org, Google, or MDBG depending on the word's
-  language. From that point your browser and the site you visit govern what
-  happens; nothing about the search is reported back to Bookaholic.</p>
+  app, and you can optionally download additional offline dictionary files from
+  the app's own release assets — this fetches a file and sends no personal data.
+  The only other optional network feature is described below.</p>
 
   <h3>Apple Translation</h3>
   <p>Bookaholic also offers an optional <strong>Translate</strong> feature, built on
