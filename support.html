@@ -123,9 +123,9 @@
 <div class="container">
 
   <h1>Bookaholic</h1>
-  <p class="tagline">A local-first reading app for iPhone — EPUB, PDF, TXT and
-  Markdown, with Japanese furigana, dictionary lookup, and built-in vocabulary
-  review. · <a href="support.zh-Hant.html">繁體中文</a></p>
+  <p class="tagline">A local-first reading app for iPhone and iPad — EPUB, PDF, TXT and
+  Markdown, with Japanese furigana, dictionary lookup, built-in vocabulary
+  review, and on-device narration. · <a href="support.zh-Hant.html">繁體中文</a></p>
 
   <h2>Contact</h2>
   <div class="contact-box">
@@ -136,9 +136,17 @@
   <h2>Operator and cloud services</h2>
   <p>Operator: Bookaholic. <a href="cloud-service.html">Cloud service information</a> explains allowance, cancellation and retry.</p>
   <div class="faq-item"><h3>How do I cancel renewal or request a refund?</h3>
-  <p>Use <a href="https://apps.apple.com/account/subscriptions">Apple subscription management</a> to cancel renewal. For a refund, use <a href="https://reportaproblem.apple.com/">Apple’s refund portal</a>; eligibility depends on Apple and applicable law. Cancelling a task or deleting your account does not cancel renewal or request a refund. In-app purchases are currently unavailable in the candidate version.</p></div>
+  <p>Bookaholic Plus is an auto-renewing monthly subscription charged to your Apple Account. It renews automatically unless you cancel at least 24 hours before the current period ends. Use <a href="https://apps.apple.com/account/subscriptions">Apple subscription management</a> to cancel renewal. For a refund, use <a href="https://reportaproblem.apple.com/">Apple’s refund portal</a>; eligibility depends on Apple and applicable law. Cancelling a task or deleting your account does not cancel renewal or request a refund.</p></div>
 
   <h2>Frequently asked questions</h2>
+
+  <div class="faq-item">
+    <h3>Which devices, languages and system versions are supported?</h3>
+    <p>Bookaholic runs on iPhone and iPad with iOS or iPadOS 18 or later. The app is available
+    in English, Traditional Chinese and Japanese, and it reads books in Chinese, English and
+    Japanese. On-device narration needs an iPhone or iPad with 8 GB of memory; on other devices
+    you can still read, look up words and review.</p>
+  </div>
 
   <div class="faq-item">
     <h3>What file formats does Bookaholic support?</h3>
@@ -153,29 +161,46 @@
   </div>
 
   <div class="faq-item">
+    <h3>How does on-device narration work?</h3>
+    <p>Storyteller turns a whole book or a single chapter into speech on your device. It is free and
+    unlimited, and finished chapters play offline. The first time, voice files are downloaded, from a
+    few hundred MB up to about 2 GB depending on the language; use Wi-Fi if you can. On iOS 26 and
+    later, generation can continue in the background after you leave the app; iOS may end it early,
+    and finished audio is kept. Full Cast (Bookaholic Plus) gives each character a different voice: it
+    sends the text of the chapters you approve to the cloud to find the characters, and the audio is
+    still generated on your device.</p>
+  </div>
+
+  <div class="faq-item">
     <h3>Where is my data stored?</h3>
     <p>Ordinary reading and standard imports use your on-device library. If you
     enable iCloud sync, library data is also stored in your private iCloud space.
-    AI import and audiobook generation send the content you select to cloud
-    services. Available features and their status are shown in the app. See the
-    <a href="privacy-policy.html">privacy policy</a> for details.</p>
+    On-device narration generates audio on your device and sends no book text
+    anywhere. Full Cast (Bookaholic Plus) sends the text of the chapters you
+    approve to cloud services for character analysis. Features that some versions
+    may enable, such as AI import or cloud narration, send the content you select
+    to cloud services. Available features and their status are shown in the app.
+    See the <a href="privacy-policy.html">privacy policy</a> for details.</p>
   </div>
 
   <div class="faq-item">
     <h3>Does the app ever use the network?</h3>
-    <p>Local reading, dictionary lookup, notes and vocabulary review work offline.
-    Optional dictionary and Apple Translation language downloads, sign-in,
-    subscription verification, cloud generation and iCloud sync use the network.
+    <p>Local reading, dictionary lookup, notes, vocabulary review and on-device
+    narration (once its voice files are downloaded) work offline. Optional
+    dictionary and Apple Translation language downloads, voice downloads, sign-in,
+    subscription verification, Full Cast analysis (and any other cloud task a
+    version enables) and iCloud sync use the network. Voice files for on-device narration are downloaded through Bookaholic's Cloudflare Worker (or, if it is unreachable, Bookaholic's Cloudflare storage); these requests carry no account, book, or reading data.
     Cloud tasks you submit may continue after you close the app. Use standard
     import if you do not want a document processed by an AI service.</p>
   </div>
 
   <div class="faq-item">
     <h3>How do I restore a subscription or delete my account?</h3>
-    <p>Open Settings → Account &amp; Usage for Restore Purchases and Delete
-    Account. Deleting your account does not erase your local or iCloud library
-    and does not cancel subscription renewal. Manage renewal separately in
-    Apple’s subscription settings. Removing the app alone does not close the account.</p>
+    <p>Open Settings → Subscription &amp; Plans for Restore Purchases and Manage
+    Subscription, and Settings → Account &amp; Usage for Delete Account. Deleting
+    your account does not erase your local or iCloud library and does not cancel
+    subscription renewal: Apple keeps billing until you cancel in Apple’s
+    subscription settings. Removing the app alone does not close the account.</p>
   </div>
 
   <div class="faq-item">

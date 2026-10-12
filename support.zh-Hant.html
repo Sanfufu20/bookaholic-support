@@ -123,8 +123,8 @@
 <div class="container">
 
   <h1>Bookaholic</h1>
-  <p class="tagline">iPhone 上的本機優先閱讀 App——支援 EPUB、PDF、TXT 與 Markdown，
-  內建日文振假名、字典查詞與單字複習。 · <a href="support.html">English</a></p>
+  <p class="tagline">iPhone 與 iPad 上的本機優先閱讀 App——支援 EPUB、PDF、TXT 與 Markdown，
+  內建日文振假名、字典查詞、單字複習與裝置上的朗讀。 · <a href="support.html">English</a></p>
 
   <h2>聯絡我們</h2>
   <div class="contact-box">
@@ -135,9 +135,16 @@
   <h2>營運者與雲端服務</h2>
   <p>營運者：Bookaholic。用量、取消與重試方式見<a href="cloud-service.zh-Hant.html">雲端服務資訊</a>。</p>
   <div class="faq-item"><h3>如何取消續訂或申請退款？</h3>
-  <p>取消續訂請使用 <a href="https://apps.apple.com/account/subscriptions">Apple 訂閱管理</a>；退款請使用 <a href="https://reportaproblem.apple.com/">Apple 退款申請</a>，資格依 Apple 與適用法律決定。取消任務或刪除帳號不會取消續訂，也不等於申請退款。候選版本目前尚未開放 App 內購買。</p></div>
+  <p>Bookaholic Plus 是自動續訂的月訂閱，費用由你的 Apple 帳號收取；除非在當期結束前至少 24 小時取消，否則會自動續訂。取消續訂請使用 <a href="https://apps.apple.com/account/subscriptions">Apple 訂閱管理</a>；退款請使用 <a href="https://reportaproblem.apple.com/">Apple 退款申請</a>，資格依 Apple 與適用法律決定。取消任務或刪除帳號不會取消續訂，也不等於申請退款。</p></div>
 
   <h2>常見問題</h2>
+
+  <div class="faq-item">
+    <h3>支援哪些裝置、語言與系統版本？</h3>
+    <p>Bookaholic 可在 iOS 或 iPadOS 18 以上的 iPhone 與 iPad 使用。介面支援 English、繁體中文與
+    日本語，可閱讀中文、英文與日文書籍。裝置上的朗讀需要 8 GB 記憶體的 iPhone 或 iPad；
+    其他裝置仍可閱讀、查字與複習。</p>
+  </div>
 
   <div class="faq-item">
     <h3>Bookaholic 支援哪些檔案格式？</h3>
@@ -151,24 +158,37 @@
   </div>
 
   <div class="faq-item">
+    <h3>裝置上的朗讀怎麼運作？</h3>
+    <p>說書模式會在你的裝置上把整本書或單一章節生成為語音，免費、不限次數，生成好的章節
+    可離線播放。第一次使用要下載聲音檔案，依語言約數百 MB 到 2 GB，建議使用 Wi-Fi。iOS 26
+    以上，生成可在你離開 App 後於背景繼續；iOS 可能提前結束，已完成的部分會保留。劇場模式
+    （Bookaholic Plus）讓每個角色使用不同聲音：會將你同意的章節文字送交雲端找出角色，
+    語音仍在你的裝置上生成。</p>
+  </div>
+
+  <div class="faq-item">
     <h3>我的資料存在哪裡？</h3>
     <p>一般閱讀與一般匯入使用裝置上的書庫。開啟 iCloud 同步後，書庫資料也會存入你的
-    私人 iCloud 空間。AI 匯入與有聲書生成會將你選取的內容送交雲端服務。可用功能及狀態
-    會在 App 中顯示；詳見<a href="privacy-policy.zh-Hant.html">隱私權政策</a>。</p>
+    私人 iCloud 空間。裝置上的朗讀在你的裝置上生成音訊，不會把書籍文字送到任何地方。
+    劇場模式（Bookaholic Plus）會將你同意的章節文字送交雲端服務分析角色。部分版本可能
+    開放的 AI 匯入或雲端語音，則會將你選取的內容送交雲端服務。可用功能及狀態會在 App 中
+    顯示；詳見<a href="privacy-policy.zh-Hant.html">隱私權政策</a>。</p>
   </div>
 
   <div class="faq-item">
     <h3>App 會使用網路嗎？</h3>
-    <p>本機閱讀、字典查詞、筆記與單字複習可離線使用。選用的字典及 Apple 翻譯語言下載、
-    登入、訂閱驗證、雲端生成與 iCloud 同步會使用網路；你已提交的雲端任務可能在關閉
-    App 後繼續執行。若不希望文件交由 AI 服務處理，可使用一般匯入。</p>
+    <p>本機閱讀、字典查詞、筆記、單字複習與裝置上的朗讀（聲音檔案下載完成後）可離線使用。
+    選用的字典及 Apple 翻譯語言下載、聲音檔案下載、登入、訂閱驗證、劇場模式分析（以及
+    版本另行開放的雲端任務）與 iCloud 同步會使用網路。朗讀用的聲音檔案會經由 Bookaholic 的 Cloudflare Worker（無法連線時改由 Bookaholic 的 Cloudflare 儲存空間）下載；這些下載請求不含你的帳號、書籍或閱讀資料。
+    你已提交的雲端任務可能在關閉 App 後繼續執行。若不希望文件交由 AI 服務處理，可使用
+    一般匯入。</p>
   </div>
 
   <div class="faq-item">
     <h3>如何恢復訂閱或刪除帳號？</h3>
-    <p>前往「設定 → 帳號與用量」使用「恢復購買」或「刪除帳號」。刪除帳號不會清除
-    本機或 iCloud 書庫，也不會取消續訂；續訂需另至 Apple 的訂閱設定管理。
-    單純移除 App 並不會關閉帳號。</p>
+    <p>前往「設定 → 訂閱與方案」使用「恢復購買」與「管理訂閱」，前往「設定 → 帳號與用量」
+    使用「刪除帳號」。刪除帳號不會清除本機或 iCloud 書庫，也不會取消續訂：在你取消之前
+    Apple 會繼續收費，請至 Apple 的訂閱設定取消。單純移除 App 並不會關閉帳號。</p>
   </div>
 
   <div class="faq-item">
