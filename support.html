@@ -167,8 +167,9 @@
     few hundred MB up to about 2 GB depending on the language; use Wi-Fi if you can. On iOS 26 and
     later, generation can continue in the background after you leave the app; iOS may end it early,
     and finished audio is kept. Full Cast (Bookaholic Plus) gives each main character a distinct voice; supporting characters share one male and one female voice. It
-    sends the text of the chapters you approve to the cloud to find the characters, and the audio is
-    still generated on your device.</p>
+    asks for consent once per book before uploading the whole book’s text to build the character list;
+    individual chapters are analysed for dialogue as you generate their audio, using AI allowance.
+    Audio is still generated on your device.</p>
   </div>
 
   <div class="faq-item">
@@ -176,10 +177,9 @@
     <p>Ordinary reading and standard imports use your on-device library. If you
     enable iCloud sync, library data is also stored in your private iCloud space.
     On-device narration generates audio on your device and sends no book text
-    anywhere. Full Cast (Bookaholic Plus) sends the text of the chapters you
-    approve to cloud services for character analysis. Features that some versions
-    may enable, such as AI import or cloud narration, send the content you select
-    to cloud services. Available features and their status are shown in the app.
+    anywhere. Full Cast (Bookaholic Plus), with your consent once per book, sends the whole book’s text
+    through Cloudflare to OpenAI to build the character list and analyses dialogue in individual
+    chapters as you generate their audio.
     See the <a href="privacy-policy.html">privacy policy</a> for details.</p>
   </div>
 
@@ -188,10 +188,9 @@
     <p>Local reading, dictionary lookup, notes, vocabulary review and on-device
     narration (once its voice files are downloaded) work offline. Optional
     dictionary and Apple Translation language downloads, voice downloads, sign-in,
-    subscription verification, Full Cast analysis (and any other cloud task a
-    version enables) and iCloud sync use the network. Voice files for on-device narration are downloaded through Bookaholic's Cloudflare Worker (or, if it is unreachable, Bookaholic's Cloudflare storage); these requests carry no account, book, or reading data.
+    subscription verification, Full Cast analysis and iCloud sync use the network. Voice files for on-device narration are downloaded through Bookaholic's Cloudflare Worker (or, if it is unreachable, Bookaholic's Cloudflare storage); these requests carry no account, book, or reading data.
     Cloud tasks you submit may continue after you close the app. Use standard
-    import if you do not want a document processed by an AI service.</p>
+    import and Storyteller without enabling Full Cast if you do not want book text processed by an AI service.</p>
   </div>
 
   <div class="faq-item">
